@@ -35,7 +35,7 @@ tenancy_ocid         = "<tenancy_ocid>"
 user_ocid            = "<user_ocid>"
 fingerprint          = "<finger_print>"
 private_key_path     = "<pem_private_key_path>"
-region = "<oci_region>"
+region               = "<oci_region>"
 
 # Availablity Domain 
 availablity_domain_name = "<availablity_domain_name>"
