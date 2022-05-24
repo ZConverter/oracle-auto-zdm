@@ -1,11 +1,8 @@
+# ZConverter DR Manager(ZDM) using Terraform
 
-# Hub-and-Spoke Network using DRG
+ZConverter DRaaS enables you to minimize business data loss by configuring instantaneous recovery systems to the cloud in the event of a disaster or disaster.
 
-A Hub-and-spoke network (often called star topology) has a central component (the hub) that's connected to multiple networks around it, like a wheel. Implementing this topology in the traditional data center can be costly. But in the Oracle Cloud, there’s no extra cost.
-
-With new features added to the Dynamic Routing Gateway (DRG), the DRG is now capable of having multiple VCNs attached, becoming the central component and adding flexibility to how you design your cloud network
-
-For details of the architecture, see [_Set up a hub-and-spoke network topology using dynamic routing gateway_](https://docs.oracle.com/en/solutions/hub-spoke-network-drg/index.html)
+For details of the architecture, see [Reference_Architectures URL](https://docs.oracle.com/en/solutions/hub-spoke-network-drg/index.html)
 
 ## Architecture Diagram
 
