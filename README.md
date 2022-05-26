@@ -1,8 +1,6 @@
 # ZConverter DR Manager(ZDM) using Terraform
 
-ZConverter DRaaS enables you to minimize business data loss by configuring instantaneous recovery systems to the cloud in the event of a disaster or disaster.
-
-For details of the architecture, see [Reference_Architectures URL](https://docs.oracle.com/en/solutions/hub-spoke-network-drg/index.html)
+ZConverter Cloud DR enables you to minimize business data loss by configuring instantaneous recovery systems to the cloud in the event of a disaster or disaster.
 
 ## Architecture Diagram
 
