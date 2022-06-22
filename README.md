@@ -42,9 +42,6 @@ availablity_domain_name = "<availablity_domain_name>"
 # Compartment
 compartment_ocid = "<compartment_ocid>"
 
-# ssh-key
-ssh_public_key = "<ssh_public_key_path>"
-
 ````
 
 ### Create the Resources
