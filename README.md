@@ -4,8 +4,8 @@ ZConverter Cloud DR enables you to minimize business data loss by configuring in
 
 ## Architecture Diagram
 
-![](./image/Description of the illustration zconverter-logic.png)
-![](./image/Description of the illustration zconverter-topology.png)
+![](./image/zconverter-logic.png)
+![](./image/zconverter-topology.png)
 
 ## Prerequisites
 
