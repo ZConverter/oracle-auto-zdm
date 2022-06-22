@@ -34,10 +34,6 @@ variable "instance_shape_flex_memory" {
   default = 8
 }
 
-variable "ssh_public_key" {
-  default = ""
-}
-
 variable "opc_user_name" {
   default = "ubuntu"
 }
