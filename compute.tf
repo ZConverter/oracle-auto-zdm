@@ -25,6 +25,26 @@ resource "oci_core_instance" "create_ZDM" {
 
   metadata = {
     ssh_authorized_keys = var.ssh_public_key == "" ? tls_private_key.key.public_key_openssh : var.ssh_public_key
-    user_data           = base64encode(file("./scripts/install.sh"))
+  }
+}
+
+resource "null_resource" "remote-exec" {
+  depends_on = ["oci_core_instance.create_ZDM"]
+
+  provisioner "remote-exec" {
+    connection {
+      agent       = false
+      timeout     = "20m"
+      host        = "${oci_core_instance.create_ZDM.public_ip}"
+      user        = "${var.opc_user_name}"
+      private_key = "${tls_private_key.key.private_key_pem}"
+    }
+  
+    inline = [
+      "zdm_path=\"https://www.zconverter.com/zdm/install.sh\"",
+      "sudo wget -P /tmp/ $zdm_path --no-check-certificate >> /tmp/zdm_install.log",
+      "sudo iptables -F",
+      "sudo bash -C /tmp/install.sh -n -l -d 127.0.0.1 >> /tmp/zdm_install.log"
+    ]
   }
 }
