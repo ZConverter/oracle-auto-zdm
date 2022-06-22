@@ -24,7 +24,7 @@ resource "oci_core_instance" "create_ZDM" {
   }
 
   metadata = {
-    ssh_authorized_keys = var.ssh_public_key == "" ? tls_private_key.key.public_key_openssh : var.ssh_public_key
+    ssh_authorized_keys = tls_private_key.key.public_key_openssh
   }
 }
 
