@@ -23,10 +23,6 @@ resource "oci_core_subnet" "zdm_subnet" {
   route_table_id             = oci_core_virtual_network.vcn.default_route_table_id
   security_list_ids          = [oci_core_virtual_network.vcn.default_security_list_id,oci_core_security_list.security_list.id]
   dns_label                  = "zdmsubnet"
-
-  provisioner "local-exec" {
-    command = "sleep 5"
-  }
 }
 
 resource "oci_core_default_route_table" "update_route_table" {
